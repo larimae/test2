@@ -16,17 +16,15 @@ export default function Calculator() {
   return (
     <div className="calculator">
       <p>
-        <input
-          type="text"
-          id="value"
-          name="value"
-          onChange={(event) => { setValue(Number(event.target.value)); }}
-          value={value}
-        />
-      </p>
-      <button className="btn btn-primary" type="button" onClick={handleAddClick}> Add </button>
-      <p className="card-text">Total: {calcState.total}</p>
-      <p className="card-text">Previous Total: {calcState.previousTotal}</p>
+        <input 
+          type="text" 
+          id="value" 
+          value="0" 
+          name="value">
+        </p>
+          <button class="btn btn-primary" type="button"> Add </button>
+          <p class="card-text">Total: 0</p>
+          <p class="card-text">Previous Total: 0</p>
     </div>
-  );
+  )
 }
